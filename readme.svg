@@ -72,14 +72,16 @@
 			position: absolute;
 			background-image: url('https://simpleicons.org/icons/typescript.svg');
 		    }
-		</style>			
-		  <div class="links">  
-		    <div class="links_item">HTML</div>
-		    <div class="links_item">CSS</div>
-		    <div class="links_item">JS</div>
-		    <div class="links_item">TAILWIND</div>
-		    <div class="links_item">TYPESCRIPT</div>
-		  </div>
-		</div>
+		</style>
+		<body>
+			  <div class="links">  
+			    <div class="links_item">HTML</div>
+			    <div class="links_item">CSS</div>
+			    <div class="links_item">JS</div>
+			    <div class="links_item">TAILWIND</div>
+			    <div class="links_item">TYPESCRIPT</div>
+			  </div>
+			</div>
+		</body>
 	</foreignObject>
 </svg>
