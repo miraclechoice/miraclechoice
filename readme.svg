@@ -1,85 +1,87 @@
-<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
-	<foreignObject width="100%" height="100%">
-		<div xmlns="http://www.w3.org/1999/xhtml">
-			<style>
-				@keyframes rotate {
-					0% {
-						transform: rotate(3deg);
-					}
-					100% {
-						transform: rotate(-3deg);
-					}
-				}
-				@keyframes gradientBackground {
-					0% {
-						background-position: 0% 50%;
-					}
-					50% {
-						background-position: 100% 50%;
-					}
-					100% {
-						background-position: 0% 50%;
-					}
-				}
-				@keyframes fadeIn {
-					0% {
-						opacity: 0;
-					}
-					66% {
-						opacity: 0;
-					}
-					100% {
-						opacity: 1;
-					}
-				}
-				.container {
-					font-family:
-						system-ui,
-						-apple-system,
-						'Segoe UI',
-						Roboto,
-						Helvetica,
-						Arial,
-						sans-serif,
-						'Apple Color Emoji',
-						'Segoe UI Emoji';
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					margin: 0;
-					width: 100%;
-					height: 400px;
-					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
-					background-size: 600% 400%;
-					animation: gradientBackground 10s ease infinite;
-					border-radius: 10px;
-					color: white;
-					text-align: center;
-				}
-				h1 {
-					font-size: 50px;
-					line-height: 1.3;
-					letter-spacing: 5px;
-					text-transform: uppercase;
-					text-shadow:
-						0 1px 0 #efefef,
-						0 2px 0 #efefef,
-						0 3px 0 #efefef,
-						0 4px 0 #efefef,
-						0 12px 5px rgba(0, 0, 0, 0.1);
-					animation: rotate ease-in-out 1s infinite alternate;
-				}
-				p {
-					font-size: 20px;
-					text-shadow: 0 1px 0 #efefef;
-					animation: 5s ease 0s normal forwards 1 fadeIn;
-				}
-			</style>
-			<div class="container">
-				<h1>Made with HTML &amp; CSS<br/>not an animated GIF</h1>
-				<p>Click to see the source</p>
-			</div>
-		</div>
-	</foreignObject>
-</svg>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');    
+    body {
+        font-family: 'Rubik';
+        background-color: #15151B;
+    }
+    img, svg {
+        vertical-align: middle;
+        width: 40px;
+        height: 40px;
+    }
+    .links {
+        display: flex;
+        gap: 5px;
+    }   
+    .links_item {
+        background-color: #070712;	
+        border-radius: 5px;
+        padding: 5px 10px 5px 30px;
+        position: relative;
+        color: #fff;
+    }
+    .links_item:nth-child(1)::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        filter: invert(1);
+        top: 8px;
+        background-repeat: no-repeat;
+        left: 10px;
+        position: absolute;
+        background-image: url('https://simpleicons.org/icons/html5.svg');
+    }
+    .links_item:nth-child(2)::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        filter: invert(1);
+        top: 8px;
+        background-repeat: no-repeat;
+        left: 10px;
+        position: absolute;
+        background-image: url('https://simpleicons.org/icons/css3.svg');
+    }
+.links_item:nth-child(3)::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    filter: invert(1);
+    top: 8px;
+    background-repeat: no-repeat;
+    left: 10px;
+    position: absolute;
+    background-image: url('https://simpleicons.org/icons/javascript.svg');
+    }
+    .links_item:nth-child(4)::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        filter: invert(1);
+        top: 8px;
+        background-repeat: no-repeat;
+        left: 10px;
+        position: absolute;
+        background-image: url('https://simpleicons.org/icons/tailwindcss.svg');
+    }
+    .links_item:nth-child(5)::before {
+        content: '';
+        width: 15px;
+        height: 15px;
+        filter: invert(1);
+        top: 8px;
+        background-repeat: no-repeat;
+        left: 10px;
+        position: absolute;
+        background-image: url('https://simpleicons.org/icons/typescript.svg');
+    }               
+</style>
+<body>
+  <div class="links">  
+    <div class="links_item">HTML</div>
+    <div class="links_item">CSS</div>
+    <div class="links_item">JS</div>
+    <div class="links_item">TAILWIND</div>
+    <div class="links_item">TYPESCRIPT</div>
+  </div>
+</body>
